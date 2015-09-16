@@ -444,5 +444,10 @@ namespace LessMsi.Gui
 		    }
 
 	    }
-	}
+
+        internal void Decompile(string p) {
+            WixDecompiler wix = new WixDecompiler(p);
+            wix.Decompile(@"D:\Nowy folder\product.wxs");
+        }
+    }
 }
